@@ -16,14 +16,12 @@
     100%{transform: rotate(360deg)}
 }
 
-
 body{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     background-image: url(images/fundomatrix.jpg);
     background-repeat: repeat;
     background-size: contain;
     background-attachment: fixed;
-
 }
 
 #container_total{
@@ -51,9 +49,7 @@ header{
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     padding-left: 10px;
-    
 }
-
 
 nav > ul {
     display: flex;
@@ -85,8 +81,6 @@ li > a:visited{
 li:hover{
     background-color: rgba(55, 226, 129, 0.776);
     transition: 2s;
-    
-
 }
 
 section{
@@ -95,13 +89,11 @@ section{
     border-radius: 20px;
     background-image:linear-gradient(to left, rgb(30, 113, 73) 50%, white);
     position: relative;
-    
-
 }
 
 #img_part1{
     height: 350px;
-    width: 350px;
+    max-width: 350px;
     position: absolute;
     top: 100px;
     left: 50%;
@@ -121,9 +113,7 @@ section{
     animation-iteration-count: infinite;
 }
 
-
 #text_part1{
-    width: 350px;
     text-align: center;
     position: absolute;
     top: 500px;
@@ -167,7 +157,6 @@ section{
 }
 
 #text_part2{
-    width: 350px;
     text-align: center;
     position: absolute;
     top: 130px;
@@ -177,29 +166,28 @@ section{
     box-shadow: 10px 10px 10px gray;
     font-size: 20px;
     padding: 10px;
-
 }
 
 #cursos_part2{
+    width: 100%;
     min-height: 650px;
     position: absolute;
     top: 300px;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    
+    flex-wrap: wrap;    
 }
 
 .icones_cursos{
+    width: 150px;
+    height: 100px;
     margin: 20px;
     text-align: center;
     box-shadow: 5px 5px 5px gray;
     border-radius: 5px;
     padding: 10px;
-
-
-
 }
 
 .icones_cursos > img{
@@ -208,7 +196,6 @@ section{
 }
 
 #text_part3{
-    width: 350px;
     text-align: center;
     position: absolute;
     top: 150px;
@@ -218,7 +205,6 @@ section{
     box-shadow: 10px 10px 10px gray;
     font-size: 20px;
     padding: 10px;
-
 }
 
 #cursos_part3{
@@ -230,7 +216,6 @@ section{
     flex-wrap: wrap;
     justify-content: center;
     align-items:center;
-    
 }
 
 #cursos_part3 > div > img{
@@ -244,7 +229,6 @@ section{
     transform: translateX(-50%);
     width: 150px;
     height: 150px;
-    
 }
 
 #img_animado_part4 > img{
@@ -255,16 +239,18 @@ section{
 #container_section_part4{
     position: absolute;
     top: 300px;
+    left: 50%;
+    transform: translateX(-50%);
     min-height: 600px;
+    width: 80%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content:space-around;
     align-items: center;
-    
 }
 
 .embreve{
-    width: 300px;
+    min-width: 20%;
     height: 150px;
     margin: 0px 15px 15px 30px;
     border-radius: 10px;
@@ -306,7 +292,15 @@ footer > p {
 #cadastrar_input:hover{
     background-color: rgba(128, 188, 154, 0.315);
     transition: 1s;
-
 }
+
+@media screen and (max-width: 700px){
+    #img_codedebug{
+        width: 245px;
+        height: 245px;
+    }
+    
+}
+
 
 

@@ -7,10 +7,10 @@ setInterval( function oscilar(){
     var seg = c.getSeconds();
 
     if (seg % 2){
-        dados.x += 0.02;
+        dados.x += 0.04;
         img.style.left = `${dados.x}%`;
     } else {
-        dados.x -= 0.02;
+        dados.x -= 0.04;
         img.style.left = `${dados.x}%`;
     }
 
